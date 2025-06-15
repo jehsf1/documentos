@@ -192,3 +192,9 @@ Versionamento – Controle de diferentes versões dos requisitos.
 •	Técnicas de Priorização
 MoSCoW – Classificação em: Must Have (essencial), Should Have (importante, mas não crítico), Could Have (desejável, mas não essencial) e Won’t Have (não será implementado agora).
 100-dollar test – Stakeholders distribuem 100 pontos entre os requisitos mais importantes.
+
+🔹 Arquitetura MVC e Princípios de Projeto
+•	Modelo-Visão-Controlador (MVC) – Divide a aplicação em três camadas: 
+•	Modelo – Gerencia dados e regras de negócio.
+•	Visão – Interface do usuário.
+•	Controlador – Coordena a interação entre Modelo e Visão.
