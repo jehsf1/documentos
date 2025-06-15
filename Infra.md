@@ -289,3 +289,34 @@ Ferramentas de Orquestração de Automação de Infraestrutura:
 🔹 Ansible: Ferramenta de automação de TI baseada em playbooks (receitas p/ conf inst ou criar infra).
 🔹 Puppet: Outra ferramenta de automação, focada em modelagem e gestão de configurações.
 Docker é para criar contêineres, Kubernetes é para gerenciar contêineres, e Rancher é para gerenciar clusters de Kubernetes. Com Ansible e Puppet, automatiza a configuração de infraestrutura.
+
+Alta Disponibilidade (HA): Capacidade do sistema operar de forma contínua, com mínimo de inatividade possível.
+Tolerância a Falhas (FT): Capacidade do sistema continuar funcionando mesmo em falha em um dos componentes.
+Indicadores de Disponibilidade
+🔹 MTBF (Mean Time Between Failures): Confiabilidade (quanto mais tempo entre falhas, melhor).
+•	Mede o tempo médio entre falhas de um sistema ou componente.
+🔹 MTTR (Mean Time to Repair): Recuperação (quanto menos tempo para recuperar, melhor).
+•	Mede o tempo médio necessário para reparar um sistema após uma falha.
+🔹 MTTF (Mean Time to Failure): Vida útil do componente (sem reparo possível, só substituição).
+•	Mede o tempo médio até a falha de um componente não reparável.
+MTBF = tempo entre falhas; MTTR = tempo para reparar; MTTF = tempo até falha.
+Clusterização: Técnica de agrupar múltiplos servidores ou componentes p/ que funcionem como um único sistema.
+•	Garantir alta disponibilidade e balanceamento de carga. Se um servidor falhar, outro assume.
+🔹 Cluster ativo-ativo: Todos os servidores estão ativos e compartilhando a carga de trabalho. 
+🔹 Cluster ativo-passivo: Um servidor está ativo, enquanto o outro fica como reserva, pronto para assumir em caso de falha. Um servidor espera enquanto o outro trabalha.
+Balanceamento de Carga: distribuir requisições/tarefas entre múltiplos servidores, garantindo não sobrecarga.
+🔹 Algoritmos de balanceamento:
+•	Round Robin: Distribui as requisições de forma circular entre os servidores. Revezamento.
+•	Least Connections: Envia a requisição p/ servidor com - conexões ativas. Servidor + livre recebe.
+•	IP Hash: Usa o endereço IP do cliente para determinar o servidor que vai atender a requisição.
+Failover: Processo de transição automática p/ sistema reserva quando o principal falha. Evitar a queda do serviço.
+🔹 Failover transparente: O usuário não percebe que houve uma falha, pois o serviço continua.
+🔹 Failback: Depois que o problema é resolvido, o sistema volta a operar normalmente no servidor principal.
+Servidores de Aplicação: Plataformas executam e gerenciam aplicações em um ambiente. Objetivo suporte a aplicações 
+🔹 Análise de Desempenho da Rede
+•	Envolve monitorar o fluxo de dados e os tempos de resposta entre o servidor e o cliente.
+•	Ferramentas comuns:
+•	Apache Bench (ab): Ferramenta para testar o desempenho do servidor web Apache.
+•	JMeter: Ferramenta popular para simulação de carga e testes de desempenho.
+•	Wireshark: Analisador de pacotes de rede para examinar o tráfego.
+Para analisar o desempenho da rede, use ferramentas de teste de carga como JMeter ou Apache Bench.
