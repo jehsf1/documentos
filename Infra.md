@@ -27,3 +27,265 @@ Cloud Storage	Armazenamento na nuvem
 FCP	Protocolo de rede de armazenamento em fibra (Fibre Channel)
 CIFS / NFS	Protocolos para compartilhar arquivos (Windows/Linux)
 Storage - Sistema para guardar e acessar dados de forma eficiente 
+
+Ambiente Linux (Red Hat e Oracle Linux)
+🔹 Instalação, Configuração e Administração
+•	Instalação: Durante a instalação, escolhe o tipo de instalação (ex: servidor, workstation) e define as partições do disco rígido. Marcar o tipo de instalação (ex: Servidor) para que as ferramentas de administração sejam instaladas.
+•	Configuração Inicial: Após a instalação, configure o hostname, rede (endereço IP, gateway), firewall e segurança (usuários e permissões).
+🔹 Configuração de Rede:
+•	Arquivo: /etc/sysconfig/network-scripts/ifcfg-eth0 (para configurar interfaces de rede).
+•	Comando para reiniciar a rede: systemctl restart network.
+🔹 Comandos Comuns:
+ps: Ver processos em execução.
+top: Monitoramento de processos em tempo real.
+df: Ver uso de disco.
+du: Ver o tamanho de diretórios.
+1.	Gerenciamento de Arquivos e Diretórios
+ls = List = Listar arquivos e diretórios
+cd = Change Directory = Mudar de diretório
+pwd = Print Working Directory = Mostrar diretório atual
+cp = Copy = Copiar arquivos
+mv = Move = Mover ou renomear arquivos
+rm = Remove = Remover arquivos
+touch = Tocar = Criar arquivo vazio
+mkdir = Make Directory = Criar diretório
+rmdir = Remove Directory = Remover diretório vazio
+2.	Permissões e Controle de Acesso
+chmod = Change Mode = Alterar permissões de arquivos
+chown = Change Owner = Alterar proprietário de arquivos
+chgrp = Change Group = Alterar grupo de arquivos
+3.	Busca e Processamento de Texto
+cat = Concatenate = Exibir conteúdo de um arquivo
+grep = Global Regular Expression Print = Buscar texto em arquivos
+find = Find = Procurar arquivos
+man = Manual = Exibir manual de um comando
+sort = Sort = Ordenar a saída
+wc = Word Count = Contar palavras de um arquivo
+head = Head = Exibir primeiras linhas de um arquivo
+tail = Tail = Exibir últimas linhas de um arquivo
+4.	Processos e Sistema
+ps = Process Status = Exibir processos em execução
+top = Top = Exibir processos mais ativos
+kill = Kill = Matar um processo
+bg = Background = Colocar o processo em segundo plano
+fg = Foreground = Trazer um processo para o primeiro plano
+sleep = Sleep = Atrasar a execução de um comando
+5.	Rede e Conectividade
+ping = Packet Internet Groper = Testar conectividade de rede
+ifconfig = Interface Configuration = Configurar interfaces de rede
+netstat = Network Statistics = Exibir estatísticas de rede e conexões
+scp = Secure Copy = Copiar arquivos entre máquinas via SSH
+df = Disk Free = Ver uso de disco
+du = Disk Usage = Ver o tamanho de diretórios
+Macete: Para lembrar de comandos de permissões:
+chmod = Change Mode
+chown = Change Owner
+Utilitários	Comandos como ls, cp, mv, grep, etc.
+Shell Script	Automatizar tarefas com comandos em sequência
+ Microsoft Windows (11 / Server 2022)
+Active Directory	Gerencia usuários em redes corporativas
+PowerShell	Ferramenta poderosa de automação no Windows
+Shell Script: Série de comandos executados no Shell para automatizar tarefas. Usa Bash como o shell mais comum.
+🔹 Criação de script: Criar arquivo com extensão .sh e usar o comando chmod +x script.sh para dar permissão exe
+🔹 Estrutura básica de um shell script:
+#!/bin/bash
+echo "Olá, Mundo!"
+•	#!/bin/bash: Define o shell a ser usado.
+•	echo: Exibe uma mensagem no terminal.
+🔹 Comando útil: bash nome_do_script.sh para executar o script.
+1. Comandos Básicos de Entrada e Saída
+•	echo = Echo = Exibir texto ou variáveis no terminal
+•	read = Read = Ler dados do usuário (entrada do teclado)
+•	$? = Exit Status = Retorna o código de saída do último comando executado
+•	$# = Number of Arguments = Número de parâmetros passados para o script
+•	$@ = All Arguments = Todos os parâmetros passados para o script
+•	$0 = Script Name = Nome do script ou programa em execução
+•	$1, $2, ... = Positional Parameters = Parâmetros passados para o script (como $1, $2, etc.)
+•	$(command) = Command Substitution = Executa um comando e substitui seu resultado no script
+•	tee = Tee = Lê a entrada e escreve no terminal e em arquivos simultaneamente
+2. Controle de Fluxo
+Condicionais
+•	if = If = Condicional para execução de comandos dependendo de uma condição
+•	else = Else = Executar comandos quando a condição do if for falsa
+•	elif = Else If = Verificar uma condição alternativa dentro de um if
+•	case = Case = Realiza múltiplas verificações em uma variável ou expressão
+•	[] = Test = Testa condições dentro de uma expressão
+•	[[ ]] = Double Brackets = Testa condições com suporte a expressões regulares e operadores lógicos
+Looping (Repetição)
+•	for = For = Estrutura de repetição (loop) para iterar sobre uma lista ou intervalo
+•	while = While = Estrutura de repetição (loop) que executa enquanto uma condição for verdadeira
+•	until = Until = Estrutura de repetição (loop) que executa até uma condição ser verdadeira
+•	break = Break = Interrompe a execução de um loop
+•	continue = Continue = Pula para a próxima iteração de um loop
+Encerramento e Retorno
+•	exit = Exit = Encerra a execução do script ou programa
+•	return = Return = Retorna de uma função no script
+3. Manipulação de Arquivos e Diretórios
+•	chmod = Change Mode = Alterar permissões de arquivos dentro do script
+•	chown = Change Owner = Alterar proprietário de arquivos dentro do script
+•	tar = Tape Archive = Compactar ou descompactar arquivos e diretórios
+•	gzip = Gzip = Compactar arquivos com algoritmo gzip
+•	gunzip = Gunzip = Descompactar arquivos .gz
+•	cut = Cut = Extrair partes específicas de linhas de texto
+•	sort = Sort = Ordena linhas de texto
+•	uniq = Uniq = Remove linhas duplicadas em uma entrada
+•	wc = Word Count = Conta palavras, linhas e caracteres em um arquivo ou entrada
+•	df = Disk Free = Ver uso de disco
+•	du = Disk Usage = Ver o tamanho de diretórios
+4. Processos e Execução
+•	ps = Process Status = Exibir processos em execução
+•	top = Top = Exibir os processos em tempo real, com informações detalhadas sobre o uso de recursos
+•	kill = Kill = Envia um sinal para um processo, normalmente para terminar um processo
+•	sleep = Sleep = Pausa a execução do script por um determinado tempo
+•	bg = Background = Colocar o processo em segundo plano
+•	fg = Foreground = Trazer um processo para o primeiro plano
+5. Manipulação de Texto e Strings
+•	cat = Concatenate = Exibir conteúdo de um arquivo
+•	grep = Global Regular Expression Print = Buscar texto em arquivos
+•	awk = Awk = Processamento de texto, ideal para trabalhar com campos e colunas em arquivos
+•	sed = Sed = Stream editor, usado para modificar texto em fluxo de dados (substituição, inserção)
+•	cut = Cut = Extrair partes específicas de linhas de texto
+6. Redirecionamento e Pipes
+•	> = Output Redirection = Redireciona a saída de um comando para um arquivo (sobrescreve)
+•	>> = Append Output = Redireciona a saída de um comando para um arquivo (acrescenta)
+•	< = Input Redirection = Redireciona a entrada de um comando de um arquivo
+•	| = Pipe = Redireciona a saída de um comando como entrada de outro comando
+7. Comandos Utilitários e Sistema
+•	date = Date = Exibe ou define a data e hora atual
+•	man = Manual = Exibir manual de um comando
+•	kill = Kill = Enviar sinal para um processo, geralmente para finalizá-lo
+•	ps = Process Status = Exibir os processos em execução
+•	top = Top = Exibir a lista de processos em tempo real, com informações detalhadas sobre o uso de recursos
+•	ping = Packet Internet Groper = Testar conectividade de rede
+•	ifconfig = Interface Configuration = Configurar interfaces de rede
+•	netstat = Network Statistics = Exibir estatísticas de rede e conexões
+•	scp = Secure Copy = Copiar arquivos entre máquinas via SSH
+Microsoft Windows (Windows 11 - desktop e Windows Server 2022 - servidores)
+🔹 Instalação e Configuração:
+•	Windows 11: o sistema pede a chave de produto (product key) e a configuração da conta Microsoft.
+•	Requisitos: Ter as configurações mínimas (ex: TPM 2.0, Secure Boot).
+•	Configuração Inicial: Após a instalação, definir preferências de usuário, rede (Wi-Fi ou Ethernet), atualizações automáticas e privacidade.
+•	Windows Server 2022: A instalação é feita de forma similar, mas configura aspectos voltados para servidores, como: Servidor de Domínio, Active Directory, Pasta Compartilhada, entre outros.
+Macete: No Windows Server 2022, seleciona "Server with Desktop Experience" para uma interface gráfica.
+
+Active Directory: tecnologia da Microsoft para gerenciar redes e controlar o acesso a recursos de rede.
+🔹 Comandos principais:
+•	dnsmgmt.msc: Para gerenciar o DNS.
+•	dcpromo: Para promover um servidor como Controlador de Domínio (antigo, no novo Windows Server 2022 é configurado pelo Server Manager).
+•	Active Directory Users and Computers: Interface gráfica para gerenciar usuários e grupos.
+1. Comandos para Gerenciamento de Usuários
+•	New-ADUser = Criar Usuário = Cria um novo usuário no Active Directory
+•	Set-ADUser = Configurar Usuário = Modifica as propriedades de um usuário existente no AD
+•	Get-ADUser = Obter Usuário = Obtém informações sobre um ou mais usuários do AD
+•	Remove-ADUser = Remover Usuário = Exclui um usuário do Active Directory
+•	Unlock-ADAccount = Desbloquear Conta = Desbloqueia uma conta de usuário que foi bloqueada
+•	Enable-ADAccount = Habilitar Conta = Ativa uma conta de usuário desativada
+•	Disable-ADAccount = Desabilitar Conta = Desativa uma conta de usuário
+•	Set-ADUserPassword = Alterar Senha = Modifica a senha de um usuário no AD
+2. Comandos para Gerenciamento de Grupos
+•	New-ADGroup = Criar Grupo = Cria um novo grupo de usuários no AD
+•	Set-ADGroup = Configurar Grupo = Modifica as propriedades de um grupo existente no AD
+•	Get-ADGroup = Obter Grupo = Obtém informações sobre um grupo do AD
+•	Add-ADGroupMember = Adicionar Membro ao Grupo = Adiciona usuários a um grupo no AD
+•	Remove-ADGroupMember = Remover Membro do Grupo = Remove usuários de um grupo no AD
+•	Remove-ADGroup = Remover Grupo = Exclui um grupo do Active Directory
+3. Comandos para Gerenciamento de Unidades Organizacionais (OUs)
+•	New-ADOrganizationalUnit = Criar OU = Cria uma nova unidade organizacional no AD
+•	Set-ADOrganizationalUnit = Configurar OU = Modifica as propriedades de uma unidade organizacional existente
+•	Get-ADOrganizationalUnit = Obter OU = Obtém informações sobre uma unidade organizacional no AD
+•	Remove-ADOrganizationalUnit = Remover OU = Exclui uma unidade organizacional do Active Directory
+4. Comandos para Gerenciamento de Computadores
+•	New-ADComputer = Criar Computador = Adiciona um novo computador ao Active Directory
+•	Set-ADComputer = Configurar Computador = Modifica as propriedades de um computador existente no AD
+•	Get-ADComputer = Obter Computador = Obtém informações sobre um computador do AD
+•	Remove-ADComputer = Remover Computador = Exclui um computador do Active Directory
+5. Comandos para Gerenciamento de Domínios e Florestas
+•	New-ADDomain = Criar Domínio = Cria um novo domínio no Active Directory
+•	Get-ADDomain = Obter Domínio = Obtém informações sobre um domínio no AD
+•	Set-ADDomain = Configurar Domínio = Modifica as propriedades de um domínio existente no AD
+•	Get-ADForest = Obter Floresta = Obtém informações sobre a floresta do Active Directory
+•	Set-ADForest = Configurar Floresta = Modifica as propriedades da floresta no AD
+6. Comandos de Consulta e Pesquisa
+•	Get-ADUser = Obter Usuário = Consulta um usuário ou grupo no AD
+•	Get-ADGroupMember = Obter Membros do Grupo = Obtém os membros de um grupo no AD
+•	Search-ADAccount = Pesquisar Conta = Pesquisa contas de usuários, computadores ou grupos no AD
+•	Get-ADObject = Obter Objeto = Obtém qualquer objeto do Active Directory (usuários, grupos, computadores, etc.)
+7. Comandos para Gerenciamento de Senhas
+•	Set-ADUserPassword = Alterar Senha = Modifica a senha de um usuário no AD
+•	Reset-ADUserPassword = Redefinir Senha = Redefine a senha de um usuário no Active Directory
+•	Get-ADUserPasswordPolicy = Obter Política de Senha = Exibe a política de senhas configurada no AD
+8. Comandos de Gerenciamento de Replicação
+•	Get-ADReplicationPartner = Obter Parceiro de Replicação = informações sobre parceiros de replicação no AD
+•	Get-ADReplicationFailure = Obter Falha de Replicação = Exibe falhas de replicação no Active Directory
+•	Sync-ADReplication = Sincronizar Replicação = Força a sincronização entre controladores de domínio no AD
+9. Comandos para Gerenciamento de Trusts (Confianças)
+•	New-ADTrust = Criar Trust = Cria um novo relacionamento de confiança entre domínios
+•	Get-ADTrust = Obter Trust = Obtém informações sobre as confianças existentes no Active Directory
+•	Remove-ADTrust = Remover Trust = Exclui um relacionamento de confiança no AD
+10. Comandos de Relatórios e Auditoria
+•	Get-ADUser -Filter * = Listar Usuários = Exibe todos os usuários do Active Directory
+•	Get-ADGroup -Filter * = Listar Grupos = Exibe todos os grupos do Active Directory
+•	Get-ADAuditPolicy = Obter Política de Auditoria = Exibe as configurações de auditoria no AD
+•	Get-ADLogonStatistics = Obter Estatísticas de Logon = Exibe informações de logon de usuários no AD
+11. Comandos para Gerenciamento de Política de Grupo (GPO)
+•	New-GPO = Criar GPO = Cria um novo Objeto de Política de Grupo (GPO) no AD
+•	Get-GPO = Obter GPO = Obtém informações sobre um GPO no Active Directory
+•	Set-GPO = Configurar GPO = Modifica um GPO existente no AD
+•	Remove-GPO = Remover GPO = Exclui um GPO do Active Directory
+12. Comandos de Sincronização com o Azure AD (Se For Usando Azure AD Connect)
+•	Start-ADSyncSyncCycle = Iniciar Sincronização = Inicia um ciclo de sincronização do Azure AD Connect com o AD local
+•	Get-ADSyncScheduler = Obter Agendador de Sincronização = Exibe o status e a configuração do agendador de sincronização do AD Connect
+•	Test-ADSync = Testar Sincronização = Testa a configuração e o status da sincronização com o Azure AD
+Powershell: Ferramenta de linha de comando e automação de tarefas no Windows.
+🔹 Comandos comuns:
+•	Get-Help: Para obter ajuda sobre comandos.
+•	Get-Process: Ver todos os processos em execução.
+•	Get-Service: Ver todos os serviços no sistema.
+•	Set-Service: Modificar propriedades de um serviço (ex: iniciar, parar).
+•	Get-EventLog: Ver logs de eventos.
+•	Executar scripts: Comando powershell -ExecutionPolicy RemoteSigned p/ permitir execução scripts
+•	No PowerShell, os cmdlets seguem formato verbo-substantivo: Get-Process, Set-Service, New-Item.
+VMWare: ferramenta para virtualização de servidores
+🔹 Máquina Virtual (VM): Máquina que roda em cima de um servidor físico, usando virtualização para funcionar.
+•	Hypervisor: Software (mestre) que controla as VMs. Existem dois tipos principais:
+•	Tipo 1 (bare-metal): Roda diretamente no hardware, como o VMware ESXi.
+•	Tipo 2 (hosted): Roda dentro de um sistema operacional, como VMware Workstation.
+🔹 Configuração 
+1.	Instalação do VMware ESXi (Vira fábrica de VMs):
+•	Instalar o ESXi diretamente no hardware do servidor (é uma instalação bare-metal).
+•	Configuração de rede e armazenamento: Definir endereços IP e conectar a storage (armazenamento).
+•	Após a instalação, pode acessar a interface do vSphere Client para gerenciamento.
+2.	Configuração das VMs:
+•	Após instalar o ESXi, cria máquinas virtuais que rodarão sobre esse sistema.
+•	Define os recursos da VM (memória, CPU, armazenamento).
+🔹 Administração do VMware
+1.	vSphere Client - a janela para gerenciar suas máquinas virtuais: Ferramenta principal para gerenciar VMs no VMware. Acessa via navegador/app, configurando VMs, redes, armazenamento e mais.
+2.	Gerenciamento de VMs:
+•	Ligar/Desligar VMs com facilidade.
+•	Snapshots: Tire instantâneos das VMs (como uma foto do estado da VM).
+•	Migração de VMs: Com vMotion, é possível mover VM de um host p/ outro sem parar a VM.
+1.	VMware High Availability (HA) Se o host cair, a VM se levanta em outro host: as VMs sejam movidas automaticamente para outro servidor, sem tempo de inatividade.
+2.	Cluster: Para usar HA, precisa configurar um cluster de servidores. O vCenter Server gerencia esse cluster e possibilita a migração automática das VMs.
+3.	Fault Tolerance (FT) a replica está sempre pronta (Tolerância a Falhas) garante que uma VM tenha réplica ativa em outro host. Caso o host primário falhe, a réplica toma o controle sem perder dados.
+Remote (Acesso Remoto): Permite que o usuário acesse um desktop ou servidor de outro local.Protocolos comuns:
+•	RDP (Remote Desktop Protocol): Usado no Windows.
+•	SSH (Tela preta): Usado para Linux.
+•	VNC (Virtual Network Computing): Usado em sistemas variados como Linux e Windows.
+Desktop Services (Serviços de Desktop)
+•	VDI (Virtual Desktop Infrastructure): permite desktop seja virtualizado no servidor e acessado de qualquer dispositivo. Exemplo: VMware Horizon, Citrix XenDesktop.
+•	RDS (Remote Desktop Services): em servidores Windows para fornecer acessos simultâneos a múltiplos usuários.
+•	Máquinas Virtuais (VMs): São ambientes isolados que emulam um computador físico completo. Cada VM tem seu próprio sistema operacional.
+•	Contêineres: + leves que VMs. Compartilham o SO do host, mantêm aplicação e dependências isoladas.
+•	Orquestração de Contêineres: Ferramentas para gerenciar e automatizar a execução de contêineres.
+•	Docker: Plataforma para criar, distribuir e executar contêineres.
+•	Docker Images: São os modelos dos contêineres.
+•	Docker Containers: São instâncias de imagens. 
+Comando básico: docker run <nome_da_imagem> para executar uma imagem.
+•	Kubernetes: Plataforma p/ orquestrar (gerenciar/automatizar) contêineres em clusters de máquinas
+•	Pods: Unidades de execução no Kubernetes, geralmente contendo um ou mais contêineres.
+•	kubectl: Comando utilizado para interagir com o Kubernetes.
+•	Rancher: Plataforma facilita o  gerenciamento de clusters Kubernetes.
+Ferramentas de Orquestração de Automação de Infraestrutura:
+🔹 Ansible: Ferramenta de automação de TI baseada em playbooks (receitas p/ conf inst ou criar infra).
+🔹 Puppet: Outra ferramenta de automação, focada em modelagem e gestão de configurações.
+Docker é para criar contêineres, Kubernetes é para gerenciar contêineres, e Rancher é para gerenciar clusters de Kubernetes. Com Ansible e Puppet, automatiza a configuração de infraestrutura.
