@@ -99,3 +99,9 @@ MTU (Maximum Transmission Unit) - Máximo de dados em um pacote, sem fragmentaç
 •	Garantir que os pacotes não sejam fragmentados na transmissão. O MTU padrão em Ethernet é 1500 bytes.
 Jumbo Frames= Pacotes grandes para redes rápidas.  O tamanho até 9000 bytes. Eles são usados para melhorar a eficiência em redes de alta performance.
 
+Hub: Camada 1 (Física), repete sinais para todas as portas, gera colisões, obsoleto
+Repetidor: Camada 1 (Física), regenera/amplifica sinais para estender alcance, não filtra dados
+Bridge (Ponte): Camada 2 (Enlace), interconecta segmentos, filtra tráfego por MAC, reduz colisões
+Switch: Camada 2 (Enlace), comutação de quadros, aprende endereços MAC, encaminha para porta correta, reduz colisões
+Roteador: Camada 3 (Rede), encaminhamento de pacotes entre redes, usa endereços IP, determina melhor caminho
+Gateway: Camadas superiores (4 a 7), interconecta redes com protocolos diferentes, faz tradução de protocolos
