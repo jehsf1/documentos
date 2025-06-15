@@ -198,3 +198,94 @@ MoSCoW – Classificação em: Must Have (essencial), Should Have (importante, m
 •	Modelo – Gerencia dados e regras de negócio.
 •	Visão – Interface do usuário.
 •	Controlador – Coordena a interação entre Modelo e Visão.
+
+Git: Ferramenta de versionamento de código fonte, usada para controlar alterações em projetos de software.
+•	git init: Inicializa um repositório Git.
+•	git clone: Clona um repositório existente.
+•	git commit: Registra as alterações feitas.
+•	git push: Envia suas alterações para o repositório remoto.
+🔹 GitHub: Plataforma que hospeda repositórios Git, facilitando a colaboração em projetos.
+🔹 GitLab – Alternativo ao GitHub e rodar as pipelines. 
+1. Comandos de Configuração
+•	git config = Configuração = Configura as opções do Git (nome de usuário, e-mail, editor, etc.)
+Exemplo: git config --global user.name "Seu Nome"
+•	git config --global user.name = Exibir Nome do Usuário = Mostra o nome de usuário configurado no Git
+•	git config --global user.email = Exibir E-mail = Mostra o e-mail configurado no Git
+•	git config --global core.editor = Configurar Editor = Configura o editor padrão do Git (ex: vim, nano, code, etc.)
+2. Comandos para Criar e Inicializar Repositórios
+•	git init = Inicializar Repositório = Cria um novo repositório Git no diretório atual
+•	git clone = Clonar Repositório = Clona um repositório remoto para o diretório local
+Exemplo: git clone https://github.com/usuario/repo.git
+3. Comandos de Estado e Informações do Repositório
+•	git status = Status = Mostra o estado atual do repositório (arquivos modificados, arquivos não rastreados, etc.)
+•	git log = Log = Exibe o histórico de commits do repositório
+Exemplo: git log --oneline para uma visão simplificada
+•	git show = Mostrar Commit = Exibe detalhes de um commit específico
+Exemplo: git show <commit_id>
+•	git diff = Diferenças = Exibe as diferenças entre os arquivos não comprometidos e o repositório
+Exemplo: git diff para ver alterações não comitadas
+4. Comandos de Trabalho com Branches
+•	git branch = Listar ou Criar Branch = Exibe, cria ou remove branches
+Exemplo: git branch para listar os branches
+Exemplo: git branch nome-da-branch para criar um novo branch
+•	git checkout = Trocar de Branch = Muda para um branch específico
+Exemplo: git checkout nome-da-branch
+•	git checkout -b = Criar e Mudar para Branch = Cria um novo branch e já muda para ele
+Exemplo: git checkout -b nova-branch
+•	git merge = Mesclar Branches = Mescla as alterações de um branch para outro
+Exemplo: git merge nome-da-branch
+•	git rebase = Rebase = Aplica as alterações de um branch em outro branch, reescrevendo o histórico
+Exemplo: git rebase nome-da-branch
+5. Comandos de Commit
+•	git add = Adicionar Arquivos = Adiciona alterações ao índice (staging area)
+Exemplo: git add arquivo.txt ou git add . para adicionar todos os arquivos modificados
+•	git commit = Commit = Registra as alterações no repositório local
+Exemplo: git commit -m "Mensagem do commit"
+•	git commit --amend = Alterar Último Commit = Modifica o último commit (ótimo para corrigir erros de mensagem ou adicionar novos arquivos)
+•	git reset = Reset = Desfaz alterações feitas no índice (não no repositório)
+Exemplo: git reset arquivo.txt para remover um arquivo do staging area
+6. Comandos de Sincronização com Repositórios Remotos
+•	git remote = Remoto = Gerencia repositórios remotos associados ao repositório local
+Exemplo: git remote -v para listar os repositórios remotos
+•	git push = Enviar para Repositório Remoto = Envia os commits locais para o repositório remoto
+Exemplo: git push origin master para enviar a branch master para o repositório remoto origin
+•	git pull = Atualizar de Repositório Remoto = Atualiza o repositório local com as alterações do repositório remoto
+Exemplo: git pull origin master
+•	git fetch = Buscar Atualizações = Baixa atualizações do repositório remoto, mas não faz merge automaticamente
+•	git remote add = Adicionar Repositório Remoto = Adiciona um repositório remoto ao repositório local
+Exemplo: git remote add origin https://github.com/usuario/repo.git
+•	git push --force = Forçar Push = Força o envio para o repositório remoto (geralmente usado após um rebase)
+Cuidado! Pode sobrescrever mudanças no remoto.
+7. Comandos de Excluindo e Limpeza
+•	git rm = Remover Arquivo = Remove arquivos do diretório e do repositório
+Exemplo: git rm arquivo.txt
+•	git reset = Reset = Desfaz alterações no histórico (volta para um commit anterior)
+Exemplo: git reset --hard <commit_id>
+•	git clean = Limpeza = Remove arquivos não rastreados (não versionados) do diretório de trabalho
+Exemplo: git clean -f para remover arquivos não rastreados
+8. Comandos de Comparação e Revisão
+•	git diff = Diferenças = Compara as alterações feitas nos arquivos antes de um commit
+Exemplo: git diff para mostrar o que foi alterado
+•	git difftool = Ferramenta de Diferença = Abre uma ferramenta externa para comparar alterações, como meld ou vimdiff
+•	git log --oneline = Histórico Simplificado = Exibe os commits de forma compacta, uma linha por commit
+9. Comandos de Stashing (Guardar Temporariamente Alterações)
+•	git stash = Armazenar Alterações = Guarda as modificações atuais (não comitadas) para um estado limpo
+Exemplo: git stash
+•	git stash pop = Recuperar Alterações = Aplica as modificações guardadas no stash e remove do stash
+•	git stash list = Listar Stashes = Exibe os stashes guardados
+•	git stash drop = Remover Stash = Exclui um stash específico da lista
+10. Comandos de Rebase e Cherry-pick
+•	git rebase = Rebase = Aplica commits de uma branch em outra, reescrevendo o histórico de commits
+•	git cherry-pick = Pick = Aplica um commit específico de outro branch ao seu branch atual
+Exemplo: git cherry-pick <commit_id>
+11. Comandos de Tagging (Marcadores de Versão)
+•	git tag = Listar Tags = Exibe todas as tags do repositório
+•	git tag <tag_name> = Criar Tag = Cria uma tag para marcar um commit
+Exemplo: git tag v1.0
+•	git push --tags = Enviar Tags = Envia todas as tags para o repositório remoto
+•	git tag -d <tag_name> = Excluir Tag = Remove uma tag do repositório local
+Exemplo: git tag -d v1.0
+12. Comandos de Segurança e Auditoria
+•	git blame = Atribuição de Linha = Mostra quem fez a última modificação em cada linha de um arquivo
+•	git log --stat = Log com Estatísticas = Exibe o histórico de commits com informações sobre modificações no código
+
