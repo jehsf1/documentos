@@ -534,3 +534,114 @@ RSync: backup e sincronização de arquivos que utiliza um algoritmo eficiente p
 Deduplicação: limpar o espaço de armazenamento eliminando arquivos redundantes. "Evitar Repetição"
 •	Elimina duplicatas de arquivos ou dados armazenados, reduzindo o uso de espaço.
 •	Pode ser feita de forma local (no servidor de backup) ou remota (na nuvem).
+
+OWASP Top 10: lista de vulnerabilidades de segurança mais comuns que afetam as aplicações web. 
+🔹 A1 - Broken Access Control (Controle de Acesso Quebrado): Refere-se à falha no controle de acesso, permitindo que usuários não autorizados acessem recursos ou funcionalidades restritas.
+"Se alguém acessar algo que não deveria, provavelmente é controle de acesso quebrado."
+🔹 A2 - Cryptographic Failures (Falhas Criptográficas): Refere-se à falha em implementar ou configurar corretamente criptografia para proteger dados sensíveis, como senhas, números de cartão de crédito, e outros dados pessoais.
+"Sem criptografia forte, seus dados podem ser descodificados facilmente."
+🔹 A3 - Injection (Injeção): A vulnerabilidade de injeção ocorre quando dados não confiáveis são enviados para um intérprete, permitindo que um atacante execute comandos maliciosos.
+•	SQL Injection: Inserção de comandos SQL no campo de entrada de um formulário.
+•	Command Injection: Execução de comandos de sistema operacional via input de usuário.
+"Injeção é quando dados são injetados em algo que não deveriam estar."
+🔹 A4 - Insecure Design (Projeto Inseguro): Falta de segurança incorporada desde o início do desenvolvimento de uma aplicação. Isso inclui a ausência de boas práticas de design de segurança durante a arquitetura do sistema.
+"Projetar sem pensar em segurança é projeto inseguro."
+🔹 A5 - Security Misconfiguration (Configuração de Segurança Incorreta): Ocorre quando a segurança da aplicação não é configurada adequadamente. Isso pode incluir permissões incorretas, parâmetros expostos ou falta de atualizações de segurança.
+"Configuração incorreta é o caminho para expor seu sistema a ataques."
+🔹 A6 - Vulnerable and Outdated Components (Componentes Vulneráveis e Desatualizados): Uso de bibliotecas, frameworks ou outros componentes de software desatualizados ou com vulnerabilidades conhecidas.
+"Sempre atualize seus componentes para evitar brechas de segurança."
+🔹 A7 - Identification and Authentication Failures (Falhas de Identificação e Autenticação): Falhas nos processos de identificação e autenticação que permitem que atacantes obtenham acesso não autorizado.
+"Se a autenticação falhar, o atacante pode se passar por você."
+🔹 A8 - Software and Data Integrity Failures (Falhas de Integridade de Software e Dados): Refere-se a falhas que permitem que um atacante altere o código do software ou os dados da aplicação, afetando sua integridade.
+"Se os dados ou o software podem ser manipulados, a integridade foi comprometida."
+🔹 A9 - Security Logging and Monitoring Failures (Falhas de Registro e Monitoramento de Segurança): Falhas no registro e monitoramento de eventos de segurança, dificultando a detecção de ataques ou comportamentos suspeitos.
+"Sem monitoramento, você não percebe o ataque até que seja tarde demais."
+🔹 A10 - Server-Side Request Forgery (SSRF): A vulnerabilidade de SSRF ocorre quando um atacante consegue fazer o servidor da aplicação fazer requisições HTTP a outros serviços internos ou externos em nome dele.
+"Server-Side é quando o servidor faz o trabalho sujo do atacante."
+
+Ataque	Descrição
+SQL Injection (SQLi)	Injeção de comandos SQL maliciosos para manipulação de dados no banco de dados.
+Cross-Site Scripting (XSS)	Injeção de scripts JavaScript em páginas web, afetando o navegador de outro usuário.
+Cross-Site Request Forgery (CSRF)	Força um usuário autenticado a realizar ações indesejadas em um sistema web.
+Insecure Deserialization	Ataque onde dados maliciosos são injetados em objetos deserializados, executando código indesejado.
+Ameaças Web
+Nome	Como Funciona	Como Prevenir/Combater
+SQL Injection	O atacante insere comandos SQL maliciosos em campos de entrada (como formulários), para acessar e modificar o banco de dados.	Validação e higienização de entradas de usuário, uso de consultas preparadas e práticas de segurança de banco de dados.
+Cross-Site Scripting (XSS)	O atacante injeta código JavaScript malicioso em páginas web que, quando carregadas pelo usuário, executam ações maliciosas.	Sanitização de entradas de usuário, uso de Content Security Policy (CSP) e escapar caracteres especiais no HTML.
+Cross-Site Request Forgery (CSRF)	O atacante engana o usuário para que ele realize uma ação indesejada em um site onde está autenticado.	Uso de tokens CSRF em formulários, verificação de origem dos pedidos e manter o usuário logado por sessões curtas.
+Drive-By Download	O atacante utiliza vulnerabilidades em sites para instalar malware no computador da vítima sem seu conhecimento.	Manter o navegador e plugins atualizados, utilizar bloqueadores de scripts e ter antivírus ativo.
+Man-in-the-Middle (MitM)	O atacante intercepta e altera a comunicação entre o cliente e o servidor, roubando ou modificando dados.	Criptografar a comunicação com HTTPS, utilizar certificados digitais e verificar a identidade dos servidores.
+Macete: 🧠 "SQL corta, XSS risca, CSRF finge ser você."
+
+Ameaças em Redes e Wireless
+Ataque/Tipo	Descrição
+DoS (Denial of Service)	Sobrecarga de um sistema para torná-lo inacessível aos usuários legítimos.
+DDoS (Distributed DoS)	Ataque DoS distribuído, utilizando múltiplas fontes (ex: botnets).
+Spoofing	Falsificação de identidade (IP, email, DNS) para enganar sistemas ou usuários.
+Sniffing	Intercepção de pacotes de dados na rede para capturar informações sensíveis.
+🔹 Como prevenir:
+1.	DoS/DDoS: Implementar firewalls, sistemas anti-DDoS, CDNs e rate limiting.
+2.	Spoofing: Autenticação forte, criptografia de tráfego e verificação de pacotes.
+3.	Sniffing: Criptografar comunicação, usar VPNs e Wi-Fi seguro.
+Ameaças e Ataques em Redes Wireless
+Nome	Como Funciona	Como Prevenir/Combater
+Evil Twin	O atacante cria um ponto de acesso Wi-Fi falso com o mesmo nome (SSID) de uma rede legítima, fazendo com que os usuários se conectem a ele.	Evitar conectar-se automaticamente a redes Wi-Fi, verificar o nome da rede antes de se conectar e usar VPNs.
+War Driving	O atacante dirige por áreas públicas e mapeia redes Wi-Fi vulneráveis, buscando redes abertas ou mal configuradas.	Usar criptografia WPA2 ou WPA3, ocultar o SSID e verificar a segurança da rede regularmente.
+WPA/WPA2 Cracking	O atacante tenta quebrar a senha de redes Wi-Fi protegidas com WPA/WPA2, utilizando técnicas como força bruta ou dicionário.	Usar senhas fortes e longas, evitar palavras comuns e habilitar o WPA3, que é mais seguro que o WPA2.
+Replay Attack	O atacante captura pacotes de dados transmitidos na rede Wi-Fi e os retransmite para realizar ações fraudulentas, como acessar sistemas com dados antigos.	Usar criptografia forte, implementação de nonce (números aleatórios) e verificação de pacotes.
+Jamming	O atacante envia sinais de rádio em frequências de Wi-Fi para bloquear a comunicação, causando desconexão ou falha na rede.	Usar redes com frequências diferentes e monitorar sinais de rádio para detectar interferências.
+
+Macete: 🧠 "DoS derruba, spoof engana, sniff espiona."
+
+Ameaças por E-mail
+Técnica/Termo	Descrição
+Phishing	Ataque em que o atacante se passa por uma entidade confiável para roubar dados sensíveis.
+Whaling	Phishing direcionado a executivos ou figuras de alto nível para roubo de informações críticas.
+Spear Phishing	Phishing altamente personalizado baseado em informações específicas sobre a vítima.
+Spam	Envio de mensagens não solicitadas em massa, frequentemente com objetivos publicitários ou maliciosos.
+SPF	Mecanismo de autenticação de e-mail que verifica se o servidor de envio está autorizado.
+DKIM	Assinatura digital de e-mails que garante autenticidade e integridade da mensagem.
+Ameaças por E-mail
+Nome	Como Funciona	Como Prevenir/Combater
+Phishing	O atacante envia um e-mail que imita uma instituição legítima para enganar o usuário e obter dados confidenciais (como senhas e informações bancárias).	Não clicar em links suspeitos, verificar o remetente e usar ferramentas de filtro de spam. Ativar autenticação de dois fatores (2FA).
+Spear Phishing	Ataque mais direcionado, onde o atacante personaliza o e-mail para um alvo específico, criando maior credibilidade.	Verificar o remetente e os links antes de clicar, usar ferramentas de verificação de links e manter softwares atualizados.
+Business Email Compromise (BEC)	O atacante se passa por um executivo ou funcionário da empresa para fraudar transações financeiras ou obter informações confidenciais.	Treinamento de funcionários, verificar e-mails financeiros com um segundo canal de comunicação e usar ferramentas de detecção de fraude.
+Malware Anexado	O atacante envia um e-mail com anexo malicioso (ex: vírus, trojan), que, ao ser aberto, compromete o sistema do usuário.	Não abrir anexos de fontes desconhecidas, ter antivírus atualizado e habilitar análise de segurança em e-mails.
+Spoofing de E-mail	O atacante falsifica o endereço de e-mail do remetente para enganar o destinatário e fazer o e-mail parecer legítimo.	Verificar o domínio do e-mail, usar SPF, DKIM e DMARC para autenticação de e-mails e configurar sistemas de filtragem de e-mail.
+
+Macete: 🧠 "Phishing pesca, SPF protege, DKIM valida."
+
+Malwares
+Termo	Descrição
+Vírus	Malware que se anexa a arquivos e se propaga ao ser executado.
+Cavalo de Troia	Malware disfarçado de software legítimo, permitindo acesso remoto.
+Ransomware	Malware que criptoque ou bloqueia dados, exigindo resgate para liberá-los.
+Spyware	Malware que espiona atividades e rouba dados do usuário.
+Adware	Malware que exibe anúncios indesejados e pode redirecionar o tráfego.
+Worm	Malware autossuficiente que se replica e se espalha sem intervenção.
+Botnet	Rede de dispositivos infectados, controlados remotamente para ataques.
+Rootkit	Malware que se oculta no sistema, permitindo acesso contínuo.
+Backdoor	Porta dos fundos que permite acesso remoto sem ser detectado.
+APT	Ataque sofisticado e persistente, direcionado a organizações específicas, com o objetivo de roubo de dados e espionagem.
+
+Ataques de Malware
+Nome	Como Funciona	Como Prevenir/Combater
+Virus	O malware infecta arquivos ou programas no computador e se replica para se espalhar para outros arquivos ou sistemas.	Manter antivírus atualizado, não abrir arquivos suspeitos e fazer backups regulares.
+Trojan (Cavalo de Troia)	O malware se disfarça como um programa legítimo, mas, ao ser executado, compromete o sistema ou rouba informações.	Evitar baixar software de fontes desconhecidas, usar firewalls e antivírus e analisar programas antes de executar.
+Ransomware	O atacante criptografa os arquivos do usuário e exige um resgate para liberar o acesso aos dados.	Fazer backups regulares, não clicar em links suspeitos e usar antivírus com proteção contra ransomware.
+Spyware	O malware coleta informações do usuário (como senhas e hábitos de navegação) sem o seu consentimento.	Usar antivírus atualizado, evitar clicar em anúncios e links suspeitos e instalar programas de segurança.
+Adware	O malware exibe anúncios indesejados no computador ou redireciona o navegador para sites de publicidade.	Instalar bloqueadores de anúncios, não baixar software de fontes desconhecidas e evitar instalar barras de ferramentas.
+Macete: 🧠 "Vírus infecta, worm espalha, trojan engana, ransomware cobra."
+
+Tabela de Macetes sobre o OWASP Top 10
+Vulnerabilidade	Descrição	Macete
+A1 - Broken Access Control	Falha no controle de acesso, permitindo acessos não autorizados.	"Se alguém acessar algo que não deveria, é controle de acesso quebrado."
+A2 - Cryptographic Failures	Falha em criptografar dados sensíveis corretamente.	"Sem criptografia forte, seus dados podem ser descodificados."
+A3 - Injection	Inserção de comandos maliciosos, como SQL Injection.	"Injeção é quando dados são injetados em algo que não deveriam estar."
+A4 - Insecure Design	Falta de segurança no design e arquitetura da aplicação.	"Projetar sem pensar em segurança é projeto inseguro."
+A5 - Security Misconfiguration	Configuração incorreta de segurança, expondo vulnerabilidades.	"Configuração incorreta é o caminho para expor seu sistema a ataques."
+A6 - Vulnerable and Outdated Components	Uso de componentes desatualizados ou vulneráveis.	"Sempre atualize seus componentes para evitar brechas de segurança."
+A7 - Identification and Authentication Failures	Falhas nos processos de autenticação e identificação.	"Se a autenticação falhar, o atacante pode se passar por você."
+A8 - Software and Data Integrity Failures	Manipulação de software ou dados, comprometendo sua integridade.	"Se os dados ou o software podem ser manipulados, a integridade foi comprometida."
+A9 - Security Logging and Monitoring Failures	Falta de registro e monitoramento de eventos de segurança.	"Sem monitoramento, você não percebe o ataque até que seja tarde demais."
+A10 - SSRF	O servidor faz requisições externas ou internas em nome do atacante.	"Server-Side é quando o servidor faz o trabalho sujo do atacante."
