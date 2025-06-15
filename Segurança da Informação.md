@@ -443,3 +443,9 @@ Spinnaker	Ferramenta de CD focada em multi-cloud e entrega contínua de software
 Qualidade de Software: capacidade do sistema atender aos requisitos e expectativas do usuário.
 •	Fatores de Qualidade (ISO 25010): Funcionalidade: Faz o que deve, Confiabilidade: sem falhas, Usabilidade: É fácil,  Eficiência: desempenho, Manutenibilidade: atualiza sem grandes impactos, Segurança: protege dados.
 •	Garantia de Qualidade: Testes de Software: Unitários, integração, regressão e aceitação. Revisões e Inspeções de Código. Automação de Testes.
+
+📌 Segurança e Gerenciamento de Acesso
+🔹 Autenticação e Autorização – Controle de acesso por usuário/grupo.
+🔹 Criptografia – Proteção dos dados armazenados e em trânsito.
+🔹 Backup e Recovery – Estratégias para recuperação de dados.
+🔹 Monitoramento – Logs e métricas para identificar anomalias.
