@@ -163,3 +163,32 @@ EntityManager	Interface para manipulação de entidades no contexto de persistê
 @OneToMany, @ManyToOne	Anotações para definir relações entre entidades.
 JPQL	Linguagem de consulta semelhante ao SQL, mas operando sobre as entidades.
 🧠 JPA descreve, Hibernate escreve, Envers observa e Flyway migra
+
+Engenharia de Requisitos: levantamento, especificação, validação e gerenciamento dos requisitos ao longo do ciclo.
+🔹 Requisitos: Condições ou funcionalidades necessárias p/ um sistema atender às necessidades do usuário.
+🔹 Tipos: 
+•	Funcionais – O que o sistema deve fazer (ex.: login, processamento de pedidos).
+•	Não-Funcionais – Qualidades do sistema (ex.: segurança, desempenho, usabilidade).
+🔹 Técnicas: Entrevistas – Workshops – Questionários – Brainstorming – Prototipação.
+🔹 Especificação de Requisitos: Documento formal com detalhes funcionais e não-funcionais.
+•	Padrões: IEEE 830, User Stories (Scrum), Casos de Uso (UML).
+•	Documento de Requisitos de Software (SRS - Software Requirements Specification): Descrições detalhadas das funcionalidades do sistema, Inclui requisitos funcionais e não funcionais.
+•	Modelagem de Requisitos: Diagramas UML (Casos de Uso, Diagrama de Classes, etc.). Histórias de Usuário – Pequenas descrições do que o usuário deseja fazer.
+🔹 Técnicas de Validação de Requisitos
+•	Revisões – Análise crítica do documento solicitante. Conferência de requisitos com stakeholders.
+•	Prototipação – Criar modelos iniciais do sistema para validar conceitos antes da implementação final.
+•	Protótipos descartáveis – Criados apenas para obter feedback e depois eliminados.
+•	Protótipos evolutivos – Refinados continuamente até se tornarem o produto final.
+•	MVP (Minimum Viable Product)
+•	Produto mínimo viável com só as funcionalidades essenciais para validar hipóteses de mercado.
+•	Iteração contínua com base no retorno dos usuários.
+🔹 Critérios de Qualidade para Requisitos: 
+•	Completos – Não deixam lacunas. Consistentes – Não entram em conflito entre si. Claros – De fácil entendimento. Viáveis – Podem ser implementados com tecnologia disponível.
+🔹 Gerenciamento de Requisitos: Após a coleta, os requisitos precisam ser controlados e mantidos 
+Rastreabilidade – Relacionamento entre requisitos e funcionalidades implementadas.
+Priorização – Identificação dos requisitos mais críticos.
+Gerenciamento de mudanças – Controle de modificações ao longo do projeto.
+Versionamento – Controle de diferentes versões dos requisitos.
+•	Técnicas de Priorização
+MoSCoW – Classificação em: Must Have (essencial), Should Have (importante, mas não crítico), Could Have (desejável, mas não essencial) e Won’t Have (não será implementado agora).
+100-dollar test – Stakeholders distribuem 100 pontos entre os requisitos mais importantes.
