@@ -355,3 +355,91 @@ Protocolos de Segurança de E-mail: spf = verificar envio autorizado; dkim = ass
 Ataques de Malware: vírus = replica; worms = se espalha sozinho; trojans = se disfarça; ransomware = pede resgate; rootkits = oculta; adware = propaganda; spyware = espiona; botnet = exército de máquinas; backdoor = acesso secreto.
 APT: ataque sofisticado e persistente para roubo de dados
 Frameworks de Segurança: mitre att&ck = táticas e técnicas; cis controls = ações práticas para defesa; nist csf = gestão de riscos e redução de ameaças.
+
+SSO (Single Sign-On): Método de autenticação em que o usuário se loga uma vez para acessar vários sistemas.
+
+Keycloak: Ferramenta de gerenciamento de identidade (autorização) e autenticação, fácil de integrar com SSO. 
+
+OAuth2: Protocolo p/ permitir que uma aplicação acesse recursos de outra aplicação sem compartilhar senhas. OAuth2 (RFC 6749): padrão de autorização.
+SSO = Uma senha p/ todos sistemas. Keycloak = Ferramenta de aut. OAuth2 = Aut acesso sem compartilhar senha.
+
+Message Broker: Sistema que gerencia a troca de mensagens entre diferentes sistemas ou componentes.
+🐇 RabbitMQ: fila de mensagens. Implementa o protocolo AMQP (Advanced Message Queuing Protocol).
+•	Modelo pub/sub, onde produtores enviam mensagens para filas, e consumidores retiram as mensagens dessas filas. Comunicação desacoplada.
+•	Implementa o protocolo AMQP, aberto para mensageria que garante entrega confiável de mensagens. Persistir mensagens nas filas.
+•	Criação de clusters para aumentar a escalabilidade e redundância. Filas distribuídas. 
+•	Filas: Buffers que armazenam as mensagens enviadas pelos produtores, aguardando consumo.
+•	Exchanges: Rotear as mensagens para as filas corretas com base nas bindings e nas regras de roteamento definidas.
+🔹 Componentes Principais do RabbitMQ
+•	Producer (Produtor): Aplicação ou serviço que envia as mensagens para o RabbitMQ.
+•	Queue (Fila): Armazena mensagens enviadas pelos produtores até que o consumidor processe
+•	Consumer (Consumidor): Aplicação/serviço recebe e processa as mensagens das filas
+•	Exchange: Rotea mensagens para filas certas, seguindo regras de roteamento e bindings config.
+•	Binding: Define a relação entre 1 fila e 1 exchange. Determina como as mensagens são roteadas.
+
+Webhooks: APIs reversas (reagem a eventos). Notificação automática enviada de um sistema para outro.
+Evento negocial: acontecimento relevante no negócio.
+🧠 Rabbit envia, Webhook responde, Evento dispara
+
+Git: Sistema de controle de versão que permite rastrear alterações no código e colaborar com outros.
+•	Repositório (Repository): onde todos os arquivos e o histórico de versões do projeto são armazenados.
+•	Commit: "foto" do estado atual dos arquivos no repositório, cada tem id único (hash), rastrear alterações.
+•	Branch (Ramificação). Branch principal geral é chamado de master ou main. Histórico independente
+•	Merge é o processo de combinar as mudanças de um branch de volta ao branch principal.
+Comando Git	Descrição
+git init	Cria um novo repositório Git.
+git clone <url>	Cria uma cópia local de um repositório remoto.
+git status	Mostra o status dos arquivos no repositório (modificados, pendentes).
+git add <arquivo>	Adiciona arquivos à área de preparação para commit.
+git commit -m "mensagem"	Confirma as mudanças com uma mensagem explicativa.
+git branch	Lista os branches ou cria um novo branch.
+git checkout <branch>	Muda para o branch especificado.
+git merge <branch>	Mescla o branch especificado ao branch atual.
+git pull	Atualiza o repositório local com as últimas alterações remotas.
+git push	Envia as alterações locais para o repositório remoto.
+git log	Mostra o histórico de commits.
+git diff	Mostra as diferenças entre os arquivos no repositório e no commit.
+git reset	Desfaz as mudanças feitas em commits.
+git rm <arquivo>	Remove um arquivo do repositório e do sistema de arquivos.
+Git = Rastreia alterações no código. GitHub/GitLab = Plataformas online para repositórios.
+Kubernetes: Sist Gerencia e orquestra contêineres em ambientes de clusters, garant disponibilidade e escalabilidade
+🔹 Kubernetes: orquestrador de contêineres.
+🔹 Cluster: conjunto de máquinas trabalhando juntas.
+Kubernetes gerencia contêineres em clusters para garantir escalabilidade. Rancher gerencia clusters Kubernetes.
+Rancher: Ferramenta de gerenciamento de Kubernetes, facilita administração de clusters e orquestra contêineres.
+•	Interface de gerenciamento do Kubernetes.
+•	Fácil de usar em ambientes multi-cluster.
+
+CI/CD – Conjunto de práticas para automatizar o desenvolvimento, testes e deploy de aplicações.
+🔹 Continuous Integration (CI): Integra o código constantemente. Realiza testes automáticos na alteração.
+	Commit de Código: desenvolvedores fazem commit do código frequentemente em um repositório compartilhado (por exemplo, Git).
+	Build Automático: Após o commit, um sistema de CI (como Jenkins, Travis CI, CircleCI) inicia automaticamente o processo de build do projeto.
+	Execução de Testes: O sistema de CI executa testes automatizados para garantir que o código não quebrou nenhuma funcionalidade existente.
+	Relatório de Erros: Se algum erro for detectado, a equipe de desenvolvimento é notificada rapidamente para que a falha seja corrigida.
+🔹 Continuous Delivery (CD): Faz q o código seja entregue automaticamente em ambientes de teste
+o	Commit e CI: A equipe de desenvolvimento faz commits frequentemente no repositório e os sistemas de CI executam a integração contínua.
+o	Pipeline Automatizado: O código é enviado para um pipeline automatizado que inclui a construção, testes, e a validação.
+o	Ambiente de Staging: O código é implantado em um ambiente de staging (pré-produção) para garantir que ele funcione corretamente em um ambiente semelhante ao de produção.
+o	Pronto para Produção: O código passa por uma revisão final e é aprovado para ser implantado em produção.
+🔹 Continuous Deployment: eliminar a intervenção humana no processo de entrega.
+	Commit e CI: O desenvolvedor faz o commit do código no repositório.
+	CI + Testes: O código é automaticamente compilado e os testes são executados para garantir que a mudança não introduza falhas.
+	Deploy para Produção: Se todos os testes passarem, o código é automaticamente implantado em produção. Essa automação ocorre em todos os estágios do pipeline.
+	Feedback Instantâneo: Como o código está em produção de forma constante, a equipe recebe feedback imediato sobre a aceitação do código pelos usuários.
+Pipeline CI/CD: 
+•	Construção (Build): Compilação do código e dependências.
+•	Testes: Execução de testes automatizados, como testes unitários e de integração.
+•	Deploy: Implantação em ambientes de staging ou produção.
+•	Monitoramento: Verificação de logs e métricas após o deploy para garantir a saúde do sistema.
+Ferramenta CI/CD	Descrição
+Jenkins	Ferramenta de CI/CD amplamente utilizada, com grande flexibilidade e suporte a plugins.
+GitLab CI	Integração contínua nativa dentro do GitLab, fácil de usar e configurar.
+Travis CI	Ferramenta de CI/CD baseada em nuvem, integrada com GitHub.
+CircleCI	Ferramenta de CI/CD focada em eficiência e velocidade de pipelines.
+GitHub Actions	Ferramenta de CI/CD integrada ao GitHub, permite automação de fluxos de trabalho.
+Azure DevOps	Plataforma da Microsoft para DevOps, incluindo CI/CD e ferramentas gerenciamento de projeto.
+Spinnaker	Ferramenta de CD focada em multi-cloud e entrega contínua de software.
+
+Qualidade de Software: capacidade do sistema atender aos requisitos e expectativas do usuário.
+•	Fatores de Qualidade (ISO 25010): Funcionalidade: Faz o que deve, Confiabilidade: sem falhas, Usabilidade: É fácil,  Eficiência: desempenho, Manutenibilidade: atualiza sem grandes impactos, Segurança: protege dados.
+•	Garantia de Qualidade: Testes de Software: Unitários, integração, regressão e aceitação. Revisões e Inspeções de Código. Automação de Testes.
