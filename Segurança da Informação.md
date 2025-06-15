@@ -458,3 +458,49 @@ Garantir que a gestão de serviços de TI seja eficaz e que os serviços sejam e
 •	Avaliação e controle dos serviços e processos.
 Gerenciamento de incidentes: urgência (o mais rapidamente possível com o mínimo de interrupção).
 Gerenciamento de problemas: prevenir a ocorrência de um incidente e uma análise do impacto, causa e soluções.
+
+Perímetros de segurança: defesas que protegem a rede e as aplicações contra acessos não autorizados e ataques cibernéticos. Inclui ferramentas e sistemas que monitoram, controlam, protegem dados dentro e fora da rede.
+Firewall - Defesa de rede, decide o que pode entrar e sair. software (um servidor) ou hardware (um dispôs. dedicado).
+🔹 Firewall Proxy = Intermediário entre usuário e a rede, segurança e cache
+•	filtra solicitações e respostas de rede. Pode oferecer cache, aumentando a velocidade de navegação.
+•	Protege a rede ao ocultar o endereço IP interno e examinar profundamente o tráfego.
+WAF (Web Application Firewall) - Protege as aplicações web contra ataques como SQL Injection e XSS
+•	Camada de segurança aplicações web, filtrar, monitorar e bloquear ataques direcionados a app, SQL Injection XSS
+SIEM (Security Information and Event Management) - Coleta e analisa logs para detectar e responder a ameaças
+Identity and Access Management (IAM) - Garante quem pode, o quê e quando. Controla id e permissões de acesso.
+
+Privileged Access Management (PAM) - Controla e monitora o acesso de usuários privilegiados
+•	Sub do IAM, Assegura que o acesso a contas críticas seja monitorado e controlado.
+IPTables - Firewall em Linux, controla pacotes e tráfego
+IDS/IPS (Intrusion Detection System/Intrusion Prevention System) 
+•	IDS (Sistema de Detecção de Intrusões): Detecta e alerta sobre possíveis intrusões ou atividades suspeitas 
+•	IPS (Sistema de Prevenção de Intrusões): Vai além, bloqueando ativamente as ameaças detectadas.
+VPN (Virtual Private Network) - Rede segura pela internet, garante privacidade
+•	Criptografa comunicação entre o dispositivo do usuário e a rede, garantindo confidencialidade e integridade.
+Antivírus: Software projetado para detectar, prevenir e remover malware (vírus, worms, trojans).
+Antispam: Ferramenta para bloquear ou filtrar e-mails indesejados, pode ser um vetor para phishing ou malware.
+AntiDDoS - Protege contra ataques DDoS, mantém a rede no ar
+•	Proteção contra ataques de negação de serviço distribuída: é uma tecnologia que detecta e mitiga ataques DDoS, garantindo que a infraestrutura da rede permaneça funcionando durante o ataque.
+Ameaças e ataques:
+🔹 Negação de serviço (DoS/DDoS) – Sobrecarga de sistema para tirá-lo do ar.
+🔹 Ataques de reconhecimento – Coleta de informações para invasões futuras.
+🔹 Sniffing – Captura de tráfego de rede.
+🔹 Spoofing – Falsificação de identidade para enganar sistemas.
+Gerenciamento de Redes envolve a administração, monitoramento e controle de redes de computadores 
+ SNMP (Simple Network Management Protocol) - Protocolo para monitorar e gerenciar dispositivos de rede (roteadores, switches, servidores). Dispositivos enviam informações p/ sistema centralizado, que pode coletar e gerenciar 
+MIBs (Management Information Bases) - BD que armazena as informações dos dispositivos gerenciados, como uso de CPUne nível de memória. Estruturadas em árvore hierárquica com variáveis e valores a serem consultados via SNMP.
+NMS (Network Management System) - Gerenciar e monitorar dispositivos de rede, com interface gráfica. Coleta dados do SNMP e exibe de forma visual e interativa para os administradores de rede. 
+Agentes SNMP - Sensores nos dispositivos de rede que coletam dados e enviam para o NMS
+Ferramentas de monitoramento: Usadas para coletar, analisar e visualizar dados de desempenho de sistemas, aplicativos e redes. Ajudam na detecção de falhas, análise de tendências e melhoria de performance.
+Logging: Coleta de logs (registros) de eventos/transações em sistemas p/ monitoramento contínuo, auditoria e diagnóstico.
+🔹 Zabbix 
+•	Funcionalidades: Monitora métricas de desempenho, como uso de CPU, memória, disco, além de realizar detecção de falhas e alertas automáticos.
+🔹 Grafana - Visualização de dados com painéis e gráficos interativos
+•	Funcionalidades: Permite gráficos dinâmicos, dashboards customizáveis, alertas visuais e integração com várias fontes de dados.
+🔹 Elasticsearch - Pesquisa e análise de grandes volumes de dados em tempo real
+•	Geralmente é parte de um stack mais amplo, como o ELK Stack (Elasticsearch, Logstash e Kibana).
+•	Funcionalidades: Indexa e pesquisa grandes volumes de dados, oferece consultas em tempo real e é altamente escalável.
+🔹 Kibana - Visualização dos dados do Elasticsearch em gráficos e painéis
+•	Funcionalidades: Criação de gráficos, mapas de calor e dashboards para exibir dados históricos e em tempo real.
+🔹 Application Performance Monitoring (APM) - monitoram a performance de aplicações em tempo real
+•	Funcionalidades: Monitora tempo de resposta, latência, transações, erros de código e uso de recursos de aplicações em tempo real.
