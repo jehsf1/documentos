@@ -320,3 +320,71 @@ Servidores de Aplicação: Plataformas executam e gerenciam aplicações em um a
 •	JMeter: Ferramenta popular para simulação de carga e testes de desempenho.
 •	Wireshark: Analisador de pacotes de rede para examinar o tráfego.
 Para analisar o desempenho da rede, use ferramentas de teste de carga como JMeter ou Apache Bench.
+
+📌 Gerenciamento de Usuários
+🔹 JBoss: Utiliza roles (regras) e grupos para gerenciar permissões de usuários.
+•	Exemplo: Configuração de roles no application-users.properties e application-roles.properties.
+🔹 Apache HTTP Server: Pode usar o mod_auth_basic para autenticação, geralmente combinada com arquivos .htpasswd para gerenciar os usuários e suas permissões.
+•	Comando para criar usuário: htpasswd -c /path/to/.htpasswd username.
+🔹 IIS (Internet Information Services): O gerenciamento de usuários é feito diretamente através do Active Directory ou controle local de usuários do Windows.
+No JBoss, configura roles no application-users.properties. No Apache, usa htpasswd. No IIS, o gerenciamento é feito pelo Active Directory.
+🔹 Administração e configuração: Instalar, configurar e otimizar o desempenho do servidor.
+🔹 Análise de desempenho: Ver uso de CPU, memória, conexões etc.
+🔹 Gerenciamento de usuários: Criar, modificar e controlar permissões.
+🔹 Logs de serviços: Verificar arquivos de log para entender falhas ou atividades.
+Configuração, Administração e Logs de Serviços
+🔹 JBoss produto Had Hat (WildFly - open): Full JEE (Java) – Enterprise Empresa/Comercial
+•	Arquivo de configuração: standalone.xml ou domain.xml, onde configura recursos do servidor.
+1.	Standalone = Coisa única que roda em um único lugar. 
+•	Logs: O JBoss grava logs em standalone/log/server.log. Usa tail -f p/ monitorar o log em tempo real.
+•	Reiniciar: ./bin/standalone.sh -c standalone.xml.
+🔹 Apache HTTP Server:
+•	Arquivo de configuração: httpd.conf, onde define diretivas como DocumentRoot, ServerName, etc.
+•	Logs: Logs de acesso e erro ficam em /var/log/apache2/access.log e error.log.
+•	Reiniciar: sudo service apache2 restart (Ubuntu) ou sudo systemctl restart httpd (CentOS).
+🔹 IIS (Internet Information Services):
+•	Arquivo de configuração: Configurações de sites e serviços são feitas através do IIS Manager ou arquivos de configuração XML como applicationHost.config.
+•	Logs: O IIS armazena logs em C:\inetpub\logs\LogFiles.
+•	Para reiniciar o IIS: Use iisreset.
+•	Logs: Em LogFiles, você tem registros detalhados de erros e acessos.
+JBoss usa standalone.xml e logs estão em server.log. Apache usa httpd.conf e logs estão em access.log e error.log. IIS usa o IIS Manager e logs ficam em LogFiles.
+
+Tabela de Macetes para Sistemas Operacionais
+Instalação Linux	Durante a instalação, escolha o tipo de instalação (ex: Servidor).	Não se esqueça de configurar o hostname e a rede.
+Comandos Linux	ls = listar arquivos, cd = mudar diretório.	chmod = mudar permissão, chown = mudar proprietário.
+Shell Script	Crie arquivos .sh e use chmod +x para torná-los executáveis.	echo para exibir mensagens.
+Instalação Windows 11	Durante a instalação, insira a chave de produto.	Atente-se ao TPM 2.0 e Secure Boot para compatibilidade.
+Active Directory	Use Active Directory Users and Computers para gerenciar usuários.	dcpromo para promover um servidor a controlador de domínio (versões antigas).
+Powershell	Get-Help para consultar comandos.	Cmdlets: Get-, Set-, New-.
+
+Máquina Virtual (VM)	VMs são como computadores independentes dentro de um servidor físico.	"Máquinas virtuais são falsas, mas funcionam de verdade."
+Hypervisor	O hypervisor é o mestre das VMs.	hypervisor é mestre controla as VMs.
+Instal VMware ESXi	ESXi instalado diretamente no hardware servidor	ESXi, o servidor uma fábrica de VMs
+vSphere Client	É a ferramenta principal para gerenciar VMs.	vSphere Client: a janela para suas VMs.
+Snapshots	São como fotos do estado das VMs.	como uma foto das suas VMs.
+vMotion	Mover uma VM de host para outro sem parar a VM.	vMotion as VMs movem sem notar
+Alta Dispon (HA)	Se um host falhar, a VM é movida automaticamente.	Se o host cair, a VM levanta em outro
+Fault Tolera (FT)	Replica uma VM em outro host, sem perda de dados.	a replica está sempre pronta.
+
+Acesso Remoto (Remote)	Use RDP para Windows e VNC para sistemas variados.	RDP para acessar Windows, VNC para sistemas variados.
+Serviços de Desktop (VDI/RDS)	VDI virtualiza o desktop completo, RDS compartilha.	o desktop está na nuvem. Com RDS, múltiplos usuários em um servidor.
+Máquinas Virtuais e Contêineres	VMs são completos, contêineres são mais leves.	VMs = computadores completos, contêineres = caixas isoladas.
+Docker e Kubernetes	Docker para criar contêineres, Kubernetes para gerenciar.	Docker para criar, Kubernetes para gerenciar. Rancher para clusters.
+CI/CD	CI integra/testa, CD entrega automaticamente.	Com CI, você integra o código. Com CD, você entrega o código.
+Git	git init para inicializar, git push para enviar alterações.	Com Git, controle suas alterações e push para o GitHub.
+
+MTBF (Mean Time Between Failures)	MTBF = tempo entre falhas.
+MTTR (Mean Time to Repair)	MTTR = tempo para reparar.
+MTTF (Mean Time to Failure)	MTTF = tempo até falha de comp ñ repara
+
+Análise de Desempenho da Rede	Ferramentas como JMeter, Apache Bench, e Wireshark.
+Gerenciamento de Usuários (JBoss)	No JBoss, use roles em application-users.properties.
+Gerenciamento de Usuários (Apache)	Use htpasswd para gerenciamento de usuários no Apache.
+Gerenciamento de Usuários (IIS)	O IIS usa Active Directory ou controle local de usuários.
+Configuração do JBoss	Arquivo de configuração: standalone.xml ou domain.xml.
+Configuração do Apache	Arquivo de configuração: httpd.conf.
+Configuração do IIS	Configurações feitas pelo IIS Manager.
+Logs do JBoss	Logs estão em server.log dentro de standalone/log.
+Logs do Apache	Logs ficam em access.log e error.log.
+Logs do IIS	Logs ficam em C:\inetpub\logs\LogFiles.
+
