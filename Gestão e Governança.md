@@ -277,3 +277,24 @@ Planejamento, Fiscalização e Gestão de Contratos de TIC: Gestão de contratos
 Gestão de Riscos: Processo de identificação, análise, avaliação e tratamento (mitigação) e monitoramento de riscos relacionados à segurança e continuidade dos serviços de TI.
 •	Garantir que a TI suporte as operações sem expor a organização a riscos indesejados. Identificação, análise, avaliação, tratamento e monitoramento dos riscos.
 
+Administração de Sistema da Informação:
+🔹Sistemas de Processamento de Transações (SPT): monitora as transações.
+🔹Sistemas de Informações Gerenciais (SIG):  Relatórios de desempenho para ter previsão de melhora.
+🔹Sistemas de Apoio à Decisão (SAD): é a tomada a decisão em relação a problemas não usuais
+🔹Sistemas de Apoio ao Executivo (SAE): são as tomadas de decisão “master”, são a longo prazo 
+Estrutura da Governança de TI:
+🔹Princ: Alinham estratégico, entrega valor, gerenciamento riscos, otimização recursos e medição desempenho.
+🔹Componentes: Estruturas Organizacionais (comitês e papéis de decisão)/Processos (definição de diretrizes e normas)/Mecanismos de Controle (auditorias, indicadores e compliance).
+🔹Cadeia de valor integrada (CVI) conjunto macroprocessos e processos em uma visão estratégica.
+🔹 Tipos de gerenciamento de processos de Negócio: Centrado ser humano / Centrado documentos / Centrado integração (pouco ou nenhuma interferência humana) - Coordenação de sistemas de softwares diferentes.
+🔹 Tipos de Processos de Negócio:
+Processos primários: natureza interfuncional e compõem a cadeia que entrega valor diretamente para cliente. Processos de suporte:  suporte e habilitam outros processos. Processos de gerenciamento:  medir, monitorar e controlar atividades de negócio. Asseguram que processos atinjam suas metas.
+
+Planejamento Estratégico de TIC. Como a TIC apoia objetivos da organização. Avaliação ambiente interno e externo
+ 🔹 Plano Diretor de TIC (PDTIC) - Plano que Direciona Toda a Infra de Computação
+•	Documento que planeja ações, metas, sistemas e infraestrutura. Deve ser revisado periodicamente.
+•	Baseado em diagnóstico e alinhamento estratégico.
+o	Fases: Diagnóstico, Definição de objetivos, Plano de ação, Monitoramento/revisão.
+🔹 Indicadores de desempenho - Sem indicador, não tem direção
+•	Medem se a TIC está entregando valor.
+•	Devem estar alinhados aos objetivos do negócio.
