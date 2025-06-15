@@ -298,3 +298,52 @@ o	Fases: Diagnóstico, Definição de objetivos, Plano de ação, Monitoramento/
 🔹 Indicadores de desempenho - Sem indicador, não tem direção
 •	Medem se a TIC está entregando valor.
 •	Devem estar alinhados aos objetivos do negócio.
+
+Modelagem de Processos com BPMN: Notação gráfica para modelar processos de negócio. 
+🔹 Elementos:
+•	Atividades: Tarefas a serem realizadas.
+•	Eventos: Início, fim e outros eventos que afetam o processo.
+•	Gateways: Pontos de decisão ou ramificação no fluxo.
+•	Fluxos de sequência: Conexões que indicam a ordem das atividades.
+•	Pools e Lanes: Representação de participantes ou departamentos.
+🔹 Técnicas de Análise de Processos
+•	Mapeamento de Processos: Identificação e documentação dos fluxos de trabalho.
+•	Análise de Gargalos: Identificação de pontos de atraso ou ineficiência.
+•	Análise de Valor Agregado: Avaliar valor agregado pelas atividades.
+•	Análise de Fluxo de Trabalho: Verificação de redundâncias e falhas na comunicação.
+🔹 Melhoria de Processos
+•	PDCA (Plan, Do, Check, Act): Ciclo contínuo de planejamento, execução, verificação e ação.
+•	Six Sigma: Redução de defeitos e variação nos processos.
+•	Lean: Eliminação de desperdícios e maximização do valor.
+•	Kaizen: Melhoria contínua com mudanças incrementais.
+🔹 Integração de Processos
+•	Integração por TI: Sistemas como ERP para conectar áreas da organização.
+•	Automação de Processos: Uso de software para reduzir intervenção humana.
+•	Comunicação Interdepartamental: Melhoria na troca de informações entre departamentos.
+🔹 Gestão Estratégica de Processos
+•	Alinhamento com Estratégia: Garantir que processos atendam aos objetivos organizacionais.
+•	Mapeamento Estratégico: Definir processos necessários para alcançar as metas.
+•	Avaliação de Performance: Monitoramento contínuo dos processos para garantir sucesso.
+•	Desenvolvimento de Capacidades: Melhorar as capacidades organizacionais para execução eficaz.
+🔹 Output: resultado direto e tangível (ou intangível) de um serviço.
+🔹 Outcome: impacto duradouro ou benefício que o resultado gera ao cliente ou organização no tempo.
+🔹 Tempo de recuperação (OTR) descreve o tempo máximo aceitável que pode decorrer após a interrupção do serviço até que a sua falta cause impacto na organização.
+
+Planejamento Estratégico: Processo de análise, formulação e implementação de estratégias para alcançar os objetivos organizacionais de longo prazo.
+•	Fases: Análise do ambiente (interna e externa), definição de objetivo, formulação de estratégias, implementação e monitoramento.
+Balanced Scorecard (BSC): Equilibrar metas financeiras e não financeiras para alcançar os objetivos estratégicos.
+🔹 Perspectivas: Financeira: Resultados financeiros
+•	Clientes: Satisfação e fidelidade do cliente.
+•	Processos Internos: Eficiência dos processos internos.
+•	Aprendizado e Crescimento: Capacitação dos funcionários e inovação.
+Planejamento Estratégico Situacional (PES): Planejar ações estratégicas baseadas na análise do contexto e nas necessidades reais da organização.
+🔹 Fases: Diagnóstico situacional. Formulação de estratégias. Implementação e avaliação.
+Análise de Cenários: Antecipar mudanças e riscos, criando estratégias para lidar com cenários distintos.
+🔹 Fases: Identificação de fatores chave. Elaboração de cenários futuros. Desenvolvimento de estratégias para diferentes cenários.
+Metodologias para Medição de Desempenho: métodos usados para avaliar a eficácia das ações organizacionais.
+•	Indicadores chave de desempenho (KPIs): Medidas específicas para avaliar o progresso.
+•	Métricas financeiras: Como lucro, ROI.
+•	Métricas não financeiras: Satisfação do cliente, eficiência dos processos.
+Indicadores de Desempenho: Medidas quantitativas e qualitativas que avaliam o desempenho organizacional.
+•	Formulação: Definir metas claras e mensuráveis.
+•	Análise: Acompanhamento contínuo e ajustes nas estratégias com base nos resultados obtidos.
