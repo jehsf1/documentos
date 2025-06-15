@@ -277,3 +277,9 @@ Penalidades	Advertência, suspensão, demissão e cassação de aposentadoria.	"
 Regime Disciplinar	Infrações como abandono de cargo, improbidade e desídia resultam em penalidades graves.	"Infrações como abandono de cargo, improbidade e desídia resultam em penalidades graves."
 Procedimentos Administrativos	Inquérito administrativo e direito de defesa ao servidor.	"Em caso de infração, é instaurado um inquérito administrativo, com direito de defesa ao servidor
 
+Lei de Acesso à Informação (Lei nº 12.527/2011)
+🔹 Objetivo: Garantir transparência e acesso a informações públicas.
+🔹 Abrangência: Todos os órgãos públicos dos três poderes.
+🔹 Princípios:  Publicidade como regra, sigilo como exceção. Transparência ativa e passiva. Clareza e disponibilidade das informações.
+🔹 Prazos: Resposta em até 20 dias, prorrogáveis por 10 dias. 
+🔹 Exceções: Informações sigilosas (segurança nacional, dados pessoais).
