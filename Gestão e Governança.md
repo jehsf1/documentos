@@ -269,3 +269,11 @@ Processos de Licitação
 •	Edital: Documento formal com condições da contratação.
 •	Seleção: Processo de escolha do fornecedor.
 •	Execução e Acompanhamento: Gestão da execução do contrato.
+
+Planejamento, Fiscalização e Gestão de Contratos de TIC: Gestão de contratos e acompanhamento das execuções de serviços de TIC, garantindo a qualidade, eficiência e cumprimento dos prazos acordados.
+•	Planejamento: estudo técnico preliminar, termo de referência.
+•	Fiscalização: acompanhamento da entrega e dos prazos.
+
+Gestão de Riscos: Processo de identificação, análise, avaliação e tratamento (mitigação) e monitoramento de riscos relacionados à segurança e continuidade dos serviços de TI.
+•	Garantir que a TI suporte as operações sem expor a organização a riscos indesejados. Identificação, análise, avaliação, tratamento e monitoramento dos riscos.
+
