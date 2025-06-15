@@ -645,3 +645,37 @@ A7 - Identification and Authentication Failures	Falhas nos processos de autentic
 A8 - Software and Data Integrity Failures	Manipulação de software ou dados, comprometendo sua integridade.	"Se os dados ou o software podem ser manipulados, a integridade foi comprometida."
 A9 - Security Logging and Monitoring Failures	Falta de registro e monitoramento de eventos de segurança.	"Sem monitoramento, você não percebe o ataque até que seja tarde demais."
 A10 - SSRF	O servidor faz requisições externas ou internas em nome do atacante.	"Server-Side é quando o servidor faz o trabalho sujo do atacante."
+
+ISO/IEC 27001: Norma internacional para Sistemas de Gestão de Segurança da Informação (SGSI). Define requisitos para proteger informações e garantir confidencialidade, integridade e disponibilidade.
+→ 27001 = Sistema de Gestão (manda)
+→ 27002 = Guia de boas práticas (orienta)
+•	Principais pontos: Gestão de riscos, política de segurança, controles de acesso, auditorias e melhoria contínua.
+
+ISO/IEC 27005: Norma complementar à 27001, focada em Gestão de Riscos de Segurança da Informação.
+•	Principais etapas: Identificação, análise, avaliação e tratamento de riscos.
+•	 "I.A.T.R.A.M" Identificação → Análise → Tratamento → Aceitação → Monitoramento
+
+📌 ISO 27001/27005 – Gestão da segurança da informação e riscos.
+📌 Gerenciamento de Incidentes – Processo estruturado para resposta a ataques.
+📌 Conceitos de Segurança – Confidencialidade, integridade, disponibilidade.
+📌 Classificação da Informação – Pública, confidencial, restrita, sigilosa.
+📌 Criptografia e Segurança – Simétrica, assimétrica, PKI, ataques, protocolos.
+
+Incidente de Segurança: Qualquer evento que comprometa a segurança das informações
+🔹 Ciclo de Resposta a Incidentes (NIST SP 800-61):
+1️ Preparação – Definir políticas, equipe de resposta (CSIRT) e ferramentas.
+2️ Detecção e Análise – Identificação do incidente por logs, SIEM, alertas.
+3️ Contenção, Erradicação e Recuperação – Conter impacto, remover ameaças e restaurar sistemas.
+4 Pós-incidente – Analisar causa, documentar lições aprendidas e melhorar defesa.
+
+Segurança da Informação: Proteção contra acessos não autorizados, alterações ou destruição de dados.
+🔹 Princípios fundamentais (CID):
+ Confidencialidade – Restrição de acesso a usuários autorizados.
+ Integridade – Garantia de que os dados não foram alterados sem permissão.
+ Disponibilidade – Dados e sistemas devem estar acessíveis quando necessários.
+
+Classificação da Informação: Categorização de dados com base na criticidade e impacto (ex. Restrita, Confidencial).
+✅ Não repúdio – Garantia de que o autor de uma ação não pode negá-la (ex.: assinatura digital).
+✅ Autenticidade – Confirmação da identidade de usuários ou sistemas.
+✅ Segurança física – Proteção de servidores, redes e dispositivos físicos.
+✅ Segurança lógica – Controles de acesso, criptografia e autenticação.
