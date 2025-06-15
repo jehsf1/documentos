@@ -347,3 +347,187 @@ Metodologias para Medição de Desempenho: métodos usados para avaliar a eficá
 Indicadores de Desempenho: Medidas quantitativas e qualitativas que avaliam o desempenho organizacional.
 •	Formulação: Definir metas claras e mensuráveis.
 •	Análise: Acompanhamento contínuo e ajustes nas estratégias com base nos resultados obtidos.
+
+Ética: Conjunto de normas e valores que orientam comportamentos considerados adequados, justos e responsáveis
+🔹 Princípios e Valores Corporativos: Direcionam a conduta organizacional, como respeito, transparência, responsabilidade e compromisso com os stakeholders (clientes, fornecedores, colaboradores).
+
+Programa de Integridade Corporativa: Estratégia que visa estabelecer uma cultura de integridade, compliance e ética dentro da organização.
+🔹 Etapas de Elaboração:
+•	Diagnóstico: Avaliação dos riscos éticos e de conformidade.
+•	Políticas e Procedimentos: Criação de normas que guiem os colaboradores.
+•	Treinamentos e Capacitação: Disseminação de conhecimentos sobre ética e compliance.
+•	Canal de Denúncias: Ferramenta para comunicação de comportamentos inadequados.
+🔹 Implementação:
+•	Execução das Políticas: Colocação em prática as estratégias e processos definidos.
+•	Designação de Responsáveis: Nomeação de profissionais para liderar a iniciativa.
+•	Engajamento de Liderança: Comprometimento dos líderes para fomentar a cultura de integridade.
+🔹 Monitoramento:
+•	Avaliação Contínua: Medição da eficácia das políticas.
+•	Auditorias e Revisões: Identificação de áreas de melhoria e ajustes necessários.
+•	Relatórios de Conformidade: Avaliação do cumprimento das diretrizes e regras corporativas.
+🔹 Boas Práticas: Cultura de Transparência/ Treinamento Contínuo/ Fomento à Ética/Responsabilidade Compartilhada: Todos na organização são responsáveis pela manutenção da integridade.
+
+Práticas ESG Corporativa: Conjunto de práticas empresariais voltadas para os aspectos ambientais (Environmental), sociais (Social) e de governança (Governance).
+🔹 Ambiental (E): Compromisso com a sustentabilidade e práticas que minimizem o impacto ambiental.
+🔹 Social (S): Responsabilidade social com funcionários, fornecedores e comunidade, além de respeito aos direitos humanos.
+🔹 Governança (G): Práticas empresariais transparentes, com boa gestão e responsabilidade fiscal.
+•	Planejamento:
+•	Definir metas claras para cada área (ambiental, social e governança).
+•	Estabelecer um cronograma de implementação e avaliar recursos necessários.
+•	Implementação:
+•	Integrar práticas ESG nas políticas e operações da empresa.
+•	Envolver stakeholders e colaboradores para engajamento no processo.
+•	Monitoramento:
+•	Acompanhar os resultados e fazer ajustes conforme necessário.
+•	Realizar auditorias para garantir que as metas e objetivos ESG sejam cumpridos.
+🔹 Boas Práticas para ESG Corporativa: Transparência, Comprometimento de Liderança, Inovação e Melhoria Contínua
+
+Código de Conduta Ética: Documento que estabelece normas de comportamento e atitudes esperadas de todos os colaboradores, alinhando a atuação com a ética, integridade e transparência.
+
+Código Disciplinar: Define as condutas inadequadas e as sanções em caso de infrações, visando manter a ordem e a conformidade ética.
+
+Planejamento e Gestão Estratégica de TI
+🔹 PETI (Plano Estratégico de TI): Define diretrizes estratégicas para TI alinhadas ao negócio.
+🔹 Planejamento Estratégico de TI (PETI): É definição d diretrizes e inic de TI alinhadas aos obj estratégicos 
+🔹 Objetivos do PETI: Garantir que TI suporte os objetivos da empresa. Priorizar investimentos e projetos estratégicos. Melhorar eficiência e governança da TI. Reduzir riscos e aumentar segurança da informação.
+Principais Elementos do PETI:
+•	Missão, visão e valores da TI: Define o propósito e direção da TI.
+•	Análise SWOT: Identifica forças, fraquezas, oportunidades e ameaças.
+•	Mapeamento dos processos de TI: Alinha a TI às necessidades do negócio.
+•	Plano de investimentos em TI: Define orçamento e prioridades.
+
+PDTI (Plano Diretor de TI): Documento operacional para implementar a estratégia de TI.
+🔹 Indicadores de Desempenho(KPIs): Mede eficácia e eficiência da TI, como SLA, disp. e tempo resposta.
+
+Gestão Estratégica de TI: Adm contínua da TI com foco objetivos estratégicos, tecnologia contribua para o sucesso.
+🔹 Objetivos da Gestão Estratégica de TI:
+•	Acompanhar e ajustar o PETI conforme mudanças no negócio.
+•	Gerenciar projetos e serviços de TI para garantir entrega de valor.
+•	Medir e melhorar o desempenho da TI (indicadores e métricas).
+•	Gerenciar riscos e conformidade regulatória.
+🔹 Indicadores de Gestão Estratégica de TI:
+•	SLA (Service Level Agreement): Tempo de resposta, disponibilidade.
+•	ROI (Retorno sobre Investimento): Eficiência financeira da TI.
+•	Métricas de Segurança: Incidentes, tempo médio de resposta a ameaças.
+📌 PETI → Foco no planejamento de longo prazo e alinhamento estratégico.
+📌 Gestão Estratégica de TI → Execução e monitoramento contínuo do PETI.
+
+Brainstorming: técnica de geração de ideias em grupo. Criada por Alex Osborn na década de 
+🔹 Princípios:
+•	Suspensão do julgamento: Nenhuma ideia deve ser criticada no momento da geração.
+•	Quantidade sobre qualidade: Quanto mais ideias, maior a chance de encontrar boas soluções.
+•	Livre associação: Ideias podem ser desenvolvidas a partir de outras.
+•	Diversidade de pensamentos: Incentiva a participação de diferentes perfis e experiências.
+🔹 Etapas:
+•	Definição do problema: Estabelecer um tema ou desafio claro.
+•	Geração de ideias: Participantes sugerem ideias livremente.
+•	Registro das ideias: Anotação de todas as contribuições.
+•	Discussão e refinamento: Seleção e aprimoramento das melhores ideias.
+🔹 Variações:
+•	Brainwriting: Ideias são escritas antes da discussão em grupo.
+•	Brainstorming reverso: Participantes pensam formas de piorar o problema, e depois inverte a lógica.
+•	Brainstorming digital: Uso de plataformas online para colaboração remota.
+
+BPMN (Business Process Model and Notation): padrão gráfico para modelagem de processos de negócio. Criado pela OMG (Object Management Group), facilita a comunicação entre analistas de negócio, desenvolv. e gestores
+•	Objetivo: Representar processos de forma clara e padronizada.
+•	Uso: Automação de processos, melhoria contínua, análise de fluxo de trabalho.
+🔹 Principais de elementos:
+1️ Fluxo de Processo (Flow Objects)
+•	Evento (círculo) – Início, fim e outros eventos que afetam o processo. 
+⭕ Início (Start Event)
+🎯 Intermediário (Intermediate Event)
+⭕❗ Fim (End Event)
+•	Atividade (retângulo com cantos arredondados) – ação ou tarefa a ser realizada. 
+🔹 Tarefa (Task) – Uma única atividade executável.
+🔹 Subprocesso (Subprocess) – Um conjunto de tarefas dentro do processo.
+•	Gateway (losango) – Pontos de decisão ou ramificação no fluxo
+🔀 Exclusivo (XOR) – Somente um caminho pode ser seguido.
+🔄 Paralelo (AND) – Todos os caminhos são seguidos simultaneamente.
+🔁 Inclusivo (OR) – Pode seguir um ou mais caminhos.
+2️ Fluxo de Conexão (Connecting Objects) - Conexões que indicam a ordem das atividades
+•	Sequência (seta cheia) – Define a ordem das atividades.
+•	Mensagem (seta pontilhada) – Representa a troca de mensagens entre participantes.
+3️ Swimlanes (Raia de Processo) - Representação de participantes ou departamentos
+•	Pool – Representa um ator ou organização.
+•	Lane – Subdivisão dentro de um pool para representar departamentos ou funções.
+4️ Artefatos (Artifacts)
+•	📜 Dados (Data Object) – Informações usadas ou geradas no processo.
+•	🔖 Grupo (Group) – Agrupamento visual de atividades relacionadas.
+•	📝 Anotações (Annotation) – Comentários para facilitar a compreensão.
+🔹 Técnicas de Análise de Processos
+•	Mapeamento de Processos: Identificação e documentação dos fluxos de trabalho.
+•	Análise de Gargalos: Identificação de pontos de atraso ou ineficiência.
+•	Análise de Valor Agregado: Avaliar valor agregado pelas atividades.
+•	Análise de Fluxo de Trabalho: Verificação de redundâncias e falhas na comunicação.
+🔹 Melhoria de Processos
+•	PDCA (Plan, Do, Check, Act): Ciclo contínuo de planejamento, execução, verificação e ação.
+•	Six Sigma: Redução de defeitos e variação nos processos.
+•	Lean: Eliminação de desperdícios e maximização do valor.
+•	Kaizen: Melhoria contínua com mudanças incrementais.
+🔹 Integração de Processos
+•	Integração por TI: Sistemas como ERP para conectar áreas da organização.
+•	Automação de Processos: Uso de software para reduzir intervenção humana.
+•	Comunicação Interdepartamental: Melhoria na troca de informações entre departamentos.
+🔹 Gestão Estratégica de Processos
+•	Alinhamento com Estratégia: Garantir que processos atendam aos objetivos organizacionais.
+•	Mapeamento Estratégico: Definir processos necessários para alcançar as metas.
+•	Avaliação de Performance: Monitoramento contínuo dos processos para garantir sucesso.
+•	Desenvolvimento de Capacidades: Melhorar as capacidades organizacionais para execução eficaz.
+
+Design Thinking: Centrada na pessoa para solução de problemas complexos, na colaboração e experimentação. 
+🔹 Princípios 
+•	Empatia: Compreender as necessidades do usuário.
+•	Colaboração: Trabalho multidisciplinar para ampliar perspectivas.
+•	Experimentação: Prototipação rápida e aprendizado contínuo.
+•	Iteração: Testes constantes para refinar soluções.
+🔹 Etapas (Stanford d.school): Dimersão (Empatia) → Def do Problema → Ideação → Prototipação → Teste 
+
+Lean Startup: Foco na experimentação rápida, aprendizado contínuo e uso eficiente de recursos. Criada por Eric Ries, busca reduzir desperdícios e acelerar a inovação.
+🔹 Princípios 
+•	Construir – Medir – Aprender: Processo cíclico de desenvolvimento e validação.
+•	Produto Mínimo Viável (MVP): Versão simplificada do produto para testes rápidos.
+•	Validação de hipóteses: Uso de feedback real para ajustar a solução.
+•	Pivotagem (Pivot): Mudança de estratégia baseada em dados reais.
+•	Iteração rápida: Pequenas melhorias constantes ao invés de grandes mudanças de uma vez.
+🔹 Ciclo Lean Startup: Construir: Criar um MVP p/ testar hipóteses. Medir: Coletar dados e feedback dos usuários. Aprender: Analisar os resultados e decidir se mantém ou muda a estratégia.
+
+MVP (Produto Mínimo Viável): versão mais simples de um produto que pode ser criada e colocada no mercado 
+🔹Características:
+•	Funcionalidade básica: Só características essenciais para que os usuários interajam com o produto.
+•	R$ reduzido: O MVP permite testar com o - de investimento possível, economizando recursos 
+•	Feedback rápido: Coloca na rua p/ que usuários possam testar e fornecer feedback sobre a solução.
+
+Pivotagem: permite que o negócio se reoriente com base no feedback real do mercado.
+🔹 Tipos de Pivotagem:
+•	Pivotagem de produto: Alteração do próprio produto (funcionalidades ou modelo).
+•	Pivotagem de mercado: Mudança no público-alvo para um mercado diferente.
+•	Pivotagem de modelo de negócio: Mudança na forma como a empresa gera receitas (exemplo: de vendas diretas para assinaturas).
+
+Ciclo Construir-Medir-Aprender: etapas interativas e contínuas e adaptativa no desenvolvimento de produtos
+🔹 Etapas do Ciclo:
+1.	Construir: criar a versão + simples possível que permita testar as hipóteses de mercado
+2.	Medir: como ele está sendo usado. dados quantitativos e qualitativos. 
+3.	Aprender: a equipe avalia os resultados e aprende com as interações dos usuários. 
+
+MVP é uma versão inicial e simplificada do produto para testar hipóteses de mercado com o mínimo de investimento.
+
+Pivotagem é a mudança estratégica em resposta aos aprendizados adquiridos
+
+Ciclo Construir-Medir-Aprender o produto é constantemente aprimorado com base no feedback e dados coletados.
+
+Contratação de TI: 
+🔹 Tipos:
+•	Aquisição de Software: Licenciamento de programas.
+•	Serviços de TI: Consultoria, suporte, manutenção.
+•	Infraestrutura de TI: Equipamentos, servidores, redes.
+🔹 Processos de Licitação
+ Modalidades:
+•	Pregão: Licitação para aquisição de bens e serviços comuns.
+•	Concorrência: Para contratações de maior valor.
+•	Tomada de Preços: Para serviços com valor intermediário.
+🔹 Fases:
+•	Planejamento: Definir necessidades e requisitos.
+•	Edital: Documento formal com condições da contratação.
+•	Seleção: Processo de escolha do fornecedor.
+•	Execução e Acompanhamento: Gestão da execução do contrato.
+
