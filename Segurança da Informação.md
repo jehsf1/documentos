@@ -504,3 +504,33 @@ Logging: Coleta de logs (registros) de eventos/transações em sistemas p/ monit
 •	Funcionalidades: Criação de gráficos, mapas de calor e dashboards para exibir dados históricos e em tempo real.
 🔹 Application Performance Monitoring (APM) - monitoram a performance de aplicações em tempo real
 •	Funcionalidades: Monitora tempo de resposta, latência, transações, erros de código e uso de recursos de aplicações em tempo real.
+
+Backup: Processo de criar cópias de segurança dos dados p/ proteção contra.
+🔹 Políticas de Backup: Definem regras, procedimentos e estratégias p/ realização de backups. Devem incluir:
+Frequência, Tipo de backup, Armazenamento, Retenção: Por quanto tempo, Recuperação Como, Testes
+🔹 Política de Backup = 4 Rs:
+•	Regularidade: Frequência dos backups (diário, semanal, etc.).
+•	Retenção: Quanto tempo os backups são guardados.
+•	Recuperação: Como recuperar os dados em caso de falha.
+•	Revisão: Verifique se os backups funcionam e estão completos.
+Tipos de Backup:
+🔹 Backup Completo (Full Backup): É a cópia completa, sempre. 
+🔹 Backup Incremental: Copia o que mudou depois do último backup ("incremento" é um "acréscimo"). 
+🔹 Backup Diferencial: Copia o que mudou desde o último full.
+🔹 Backup Espelhado (Mirror Backup): Cópia exata dos dados de origem, sem compressão ou deduplicação.
+🔹 Backup em Nuvem: Armazenamento em provedores de serviços de nuvem (ex: Google Drive, AWS S3).
+Veritas NetBackup - Backup Corporativo Pesado e Recuperação de Dados
+•	Suporta backup em nuvem, dispositivos locais e servidores remotos.
+•	Oferece recuperação automatizada e escalabilidade.
+•	Suporta backup de dados em ambientes multi-plataforma.
+Robocopy (Robust File Copy): nativa do Windows para cópia de arquivos e diretórios com funcionalidades avançadas. 
+•	Suporta cópias incrementais e recuperação de falhas.
+•	Permite configurar logs para monitoramento.
+RSync: backup e sincronização de arquivos que utiliza um algoritmo eficiente para copiar e sincronizar dados entre sistemas locais e remotos. "Sincronização Inteligente"
+•	Utiliza compressão e deduplicação, otimizando o uso de banda e espaço.
+•	Suporta sincronização incremental, ou seja, somente os dados alterados são copiados.
+•	Amplamente utilizado em sistemas Unix/Linux.
+•	RSync como detetive: só copia o que mudou e faz de forma eficiente, sem sobrecarregar.
+Deduplicação: limpar o espaço de armazenamento eliminando arquivos redundantes. "Evitar Repetição"
+•	Elimina duplicatas de arquivos ou dados armazenados, reduzindo o uso de espaço.
+•	Pode ser feita de forma local (no servidor de backup) ou remota (na nuvem).
