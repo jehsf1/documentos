@@ -449,3 +449,12 @@ Qualidade de Software: capacidade do sistema atender aos requisitos e expectativ
 🔹 Criptografia – Proteção dos dados armazenados e em trânsito.
 🔹 Backup e Recovery – Estratégias para recuperação de dados.
 🔹 Monitoramento – Logs e métricas para identificar anomalias.
+
+📌 ISO/IEC 20000 - Norma para garantir serviços de TI eficazes e de qualidade
+Garantir que a gestão de serviços de TI seja eficaz e que os serviços sejam entregues de forma consistente, atendendo aos acordos de nível de serviço (SLAs) e necessidades do negócio.
+🔹 Componentes:
+•	Planejamento e implementação de sistemas de gestão de serviços.
+•	Melhoria contínua dos serviços de TI.
+•	Avaliação e controle dos serviços e processos.
+Gerenciamento de incidentes: urgência (o mais rapidamente possível com o mínimo de interrupção).
+Gerenciamento de problemas: prevenir a ocorrência de um incidente e uma análise do impacto, causa e soluções.
