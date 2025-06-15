@@ -262,3 +262,13 @@ Redes Neurais - Consistem em camadas de nós (ou neurônios) que processam infor
 5.	Redes Generativas Adversariais (GAN) - Redes que competem entre si para gerar coisas realistas. Uma gera novos dados (gerador) e outra que tenta identificar se os gerados são F ou V discriminador
 🔹 Aprendizado da Rede (Treinamento) - Ajusta os pesos e bias durante o treinamento para reduzir o erro.
 Usa-se o algoritmo de retropropagação (backpropagation) com gradiente descendente para atualizar os pesos com base no erro da saída. Ligação com deep learning.
+
+🔹 Técnicas de Validação e Ajuste de Modelos
+- Validação Cruzada: Técnica usada para avaliar o desempenho do modelo. Tipos: 
+•	Holdout: Divide os dados em treino e teste (ex.: 80%-20%).
+•	K-Fold: Divide os dados em K partes e treina k vezes.
+•	Leave-One-Out (LOO): Cada dado é testado individualmente.
+- Overfitting: Modelo memoriza os dados e não generaliza bem. 
+•	Solução: Regularização (L1, L2), poda de árvores, dropout em redes neurais.
+- Underfitting: Modelo não aprende padrões suficientes. 
+•	Solução: Aumentar complexidade do modelo, adicionar mais dados.
